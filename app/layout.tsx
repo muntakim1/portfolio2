@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { cn } from "@/lib/utils";
+import { CursorFlow } from "@/components/ui/cursor-flow";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={cn(inter.className, "min-h-screen flex flex-col antialiased")}>
         <Navbar />
+        <CursorFlow />
         <main className="flex-1">{children}</main>
         <Footer />
       </body>

@@ -2,13 +2,20 @@ import { Storage } from "@google-cloud/storage";
 
 const bucketName = process.env.NEXT_PUBLIC_GCS_BUCKET_NAME;
 
-// Initialize storage with Application Default Credentials (ADC).
-// This works automatically on Cloud Run (using the service account)
-// and locally (using 'gcloud auth application-default login').
-// It also supports GOOGLE_APPLICATION_CREDENTIALS env var pointing to a key file.
-const storage = new Storage({
-    projectId: process.env.GCP_PROJECT_ID,
-});
+// Initialize storage with explicit credentials if available (for local/custom setups),
+// otherwise fall back to Application Default Credentials (ADC) for Cloud Run.
+const storage =
+    process.env.GCP_CLIENT_EMAIL && process.env.GCP_PRIVATE_KEY
+        ? new Storage({
+            projectId: process.env.GCP_PROJECT_ID,
+            credentials: {
+                client_email: process.env.GCP_CLIENT_EMAIL,
+                private_key: process.env.GCP_PRIVATE_KEY.replace(/\\n/g, "\n"),
+            },
+        })
+        : new Storage({
+            projectId: process.env.GCP_PROJECT_ID,
+        });
 
 export async function getGCSFiles(prefix: string = "blogs/") {
     if (!storage || !bucketName) {
