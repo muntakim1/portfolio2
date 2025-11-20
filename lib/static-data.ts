@@ -69,78 +69,83 @@ export const certifications = [
     {
         name: "DeepLearning.AI TensorFlow Developer",
         issuer: "DeepLearning.AI",
-        date: "2024",
-        url: "#",
+        date: "2020",
+        url: "https://www.coursera.org/account/accomplishments/specialization/certificate/2E4Y4V9A4YUR",
     },
     {
         name: "IBM Spark Level 1",
         issuer: "IBM",
-        date: "2023",
-        url: "#",
+        date: "2022",
+        url: "https://www.credly.com/badges/bf8b0973-52f2-4d91-9155-def68558b310?source=linked_in_profile",
     },
     {
         name: "Generative AI Essentials on AWS",
         issuer: "AWS",
         date: "2025",
-        url: "#",
+        url: "https://media.licdn.com/dms/image/v2/D4D2DAQHVtkN5b3rY5g/profile-treasury-image-shrink_800_800/B4DZnclbJ7JIAc-/0/1760342422977?e=1764244800&v=beta&t=9qM4wsJO7Kqi9JhSYaSIFJX_Dx3MHSBsyXERE3TqNyQ",
     },
     {
         name: "IBM Data Science Professional",
         issuer: "IBM",
-        date: "2023",
-        url: "#",
+        date: "2020",
+        url: "https://www.credly.com/badges/77a6d454-ae9f-4b9b-9710-854362362a89/public_url",
     },
 ];
 
 export const testimonials = [
     {
-        name: "John Doe",
-        role: "CTO at Tech Corp",
-        content: "Muntakim is an exceptional Data Scientist. His work on AI agents transformed our workflow.",
+        name: "Dr Fahd Saghir",
+        role: "CEO at Innova Analytics",
+        content: "Muntakim has a proven ability to design and deliver proof-of-concept (PoC) applications, showcasing his capability to translate innovative ideas into practical solutions quickly. His technical proficiency, coupled with his problem-solving mindset, makes him a valuable asset to any team.",
     },
     {
-        name: "Jane Smith",
-        role: "Project Manager",
-        content: "Highly recommended! Delivered the project on time and exceeded expectations.",
+        name: "Roshan Soni",
+        role: "CEO at VedTeq/BasiraTech",
+        content: "I had the privilege of working with Muntakim for the last two years on multiple projects, and I can confidently say he is one of the most talented professionals I’ve collaborated with. Despite being my junior, Muntakim taught me so much about AI and machine learning, consistently showcasing his deep expertise and innovative approach to problem-solving.",
+    },
+    {
+        name: "Ash Khan",
+        role: "National Pre-Sales Consultant - Automation Expert Centre Of Excellence at Schneider Electric",
+        content: "I had the pleasure of collaborating with Muntakim on several projects involving data analytics, machine learning, and computer vision. His ability to understand project scope and deliver results on time is nothing short of remarkable.",
     },
 ];
 
 export const publications = [
     {
-        title: "Advanced AI Agents for Autonomous Systems",
-        conference: "International Conference on AI (ICAI)",
-        year: "2024",
+        title: "Vision Models for Medical Imaging: A Hybrid Approach for PCOS Detection from Ultrasound Scans",
+        conference: "International Conference on Systems Engineering, Technology, and Sustainable Solutions ",
+        year: "2025",
         url: "#",
-        description: "A comprehensive study on the architecture and deployment of autonomous AI agents in complex environments.",
+        description: "This research explores how AI-powered hybrid deep learning architectures can support clinicians by automating the detection of Polycystic Ovary Syndrome (PCOS) through ultrasound imaging — advancing diagnostic accuracy and accessibility in women’s healthcare.",
     },
-    {
-        title: "Optimizing Machine Learning Pipelines",
-        conference: "Journal of Data Science",
-        year: "2023",
-        url: "#",
-        description: "Techniques for improving the efficiency and scalability of machine learning workflows.",
-    },
+    // {
+    //     title: "Optimizing Machine Learning Pipelines",
+    //     conference: "Journal of Data Science",
+    //     year: "2023",
+    //     url: "#",
+    //     description: "Techniques for improving the efficiency and scalability of machine learning workflows.",
+    // },
 ];
 
 export const achievements = [
     {
         title: "Cisco AI Innovation Award",
         organization: "Cisco",
-        year: "2025",
+        year: "2024",
         description: "Recognized for designing and deploying an AI-powered railway safety system achieving >90% incident detection accuracy.",
     },
-    {
-        title: "Best Paper Award",
-        organization: "International Conference on AI",
-        year: "2024",
-        description: "Awarded for the paper 'Advanced AI Agents for Autonomous Systems'.",
-    },
-    {
-        title: "Hackathon Winner",
-        organization: "Global AI Hackathon",
-        year: "2022",
-        description: "First place winner for developing an innovative healthcare AI solution.",
-    },
+    // {
+    //     title: "Best Paper Award",
+    //     organization: "International Conference on AI",
+    //     year: "2024",
+    //     description: "Awarded for the paper 'Advanced AI Agents for Autonomous Systems'.",
+    // },
+    // {
+    //     title: "TM LLM LEAGUE",
+    //     organization: "Telekom Malaysia",
+    //     year: "2025",
+    //     description: "Trained and deployed a large language model (LLM) for customer service applications.",
+    // },
 ];
 
 export const skills = {
