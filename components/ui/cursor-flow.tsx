@@ -22,6 +22,8 @@ export function CursorFlow() {
         const canvas = canvasRef.current;
         if (!canvas) return;
 
+        console.log("CursorFlow mounted");
+
         const ctx = canvas.getContext("2d");
         if (!ctx) return;
 
@@ -89,8 +91,7 @@ export function CursorFlow() {
     return (
         <canvas
             ref={canvasRef}
-            className="pointer-events-none fixed inset-0 z-0"
-            style={{ mixBlendMode: "screen" }}
+            className="pointer-events-none fixed inset-0 z-50"
         />
     );
 }
