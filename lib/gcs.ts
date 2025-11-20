@@ -5,16 +5,16 @@ const bucketName = process.env.NEXT_PUBLIC_GCS_BUCKET_NAME;
 // Initialize storage with explicit credentials if available (for local/custom setups),
 // otherwise fall back to Application Default Credentials (ADC) for Cloud Run.
 const storage =
-    process.env.NEXT_PUBLIC_GCP_CLIENT_EMAIL && process.env.NEXT_PUBLIC_GCP_PRIVATE_KEY
+    process.env.GCP_CLIENT_EMAIL && process.env.GCP_PRIVATE_KEY
         ? new Storage({
-            projectId: process.env.NEXT_PUBLIC_GCP_PROJECT_ID,
+            projectId: process.env.GCP_PROJECT_ID,
             credentials: {
-                client_email: process.env.NEXT_PUBLIC_GCP_CLIENT_EMAIL,
-                private_key: process.env.NEXT_PUBLIC_GCP_PRIVATE_KEY.replace(/\\n/g, "\n"),
+                client_email: process.env.GCP_CLIENT_EMAIL,
+                private_key: process.env.GCP_PRIVATE_KEY.replace(/\\n/g, "\n"),
             },
         })
         : new Storage({
-            projectId: process.env.NEXT_PUBLIC_GCP_PROJECT_ID,
+            projectId: process.env.GCP_PROJECT_ID,
         });
 
 export async function getGCSFiles(prefix: string = "blogs/") {
