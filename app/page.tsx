@@ -8,6 +8,7 @@ import { Education } from "@/components/sections/Education";
 import { Testimonials } from "@/components/sections/Testimonials";
 
 export default function Home() {
+  console.log(process.env)
   return (
     <div className="flex flex-col min-h-screen">
       <Hero />
