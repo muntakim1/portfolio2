@@ -8,6 +8,8 @@ import { CursorFlow } from "@/components/ui/cursor-flow";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "Muntakim | Data Scientist & Researcher",
   description: "Portfolio of Muntakim, a Data Scientist and Researcher specializing in AI agents and Machine Learning.",
