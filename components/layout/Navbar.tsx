@@ -12,8 +12,8 @@ const navItems = [
     { name: "Open To", href: "/#open-to" },
     { name: "Research", href: "/#research" },
     { name: "Publications", href: "/#publications" },
+    { name: "Awards", href: "/#awards" },
     { name: "Events", href: "/#events" },
-    { name: "Blog", href: "/blog" },
 ];
 
 export function Navbar() {
