@@ -104,7 +104,7 @@ export const profileFit = {
                 },
                 {
                     label: "Production RAG / LLM systems",
-                    detail: "GPT-4o + Gemini agents · 25% ticket-load reduction · 45 ms latency cut",
+                    detail: "Multi-model AI agents · 25% ticket-load reduction · 45 ms latency cut",
                 },
                 {
                     label: "Edge ML on NVIDIA Jetson",
@@ -178,7 +178,7 @@ export const experiences = [
         type: "industry",
         highlights: [
             "Built three production-grade RAG pipelines (LangChain + Faiss), reducing average latency by 45 ms.",
-            "Developed GPT-4o-mini agents that cut human ticket load by 25%, plus a Gemini-powered personalised chatbot.",
+            "Developed GPT-4o-mini agents that cut human ticket load by 25%, plus built production chatbot systems.",
             "Authored a modular RAG framework, reducing new-client onboarding from three weeks to five days.",
         ],
     },
@@ -467,7 +467,6 @@ export const skills = {
     ],
     genai: [
         "OpenAI / GPT-4o",
-        "Gemini",
         "RAG",
         "Faiss",
         "ChromaDB",
