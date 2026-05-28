@@ -1,9 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { GraduationCap, Calendar } from "lucide-react";
+import { GraduationCap, MapPin, Calendar, Sparkles } from "lucide-react";
 import { Container } from "@/components/ui/container";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { education } from "@/lib/static-data";
 
 export function Education() {
@@ -17,47 +16,62 @@ export function Education() {
                     transition={{ duration: 0.5 }}
                     className="mb-12 text-center"
                 >
-                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">
+                    <p className="text-xs uppercase tracking-widest text-primary font-medium mb-3">
+                        Academic Background
+                    </p>
+                    <h2 className="font-serif text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl mb-4">
                         Education
                     </h2>
-                    <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                        Academic background and qualifications.
-                    </p>
                 </motion.div>
 
-                <div className="grid gap-8 md:grid-cols-2">
+                <div className="mx-auto grid max-w-5xl gap-6 md:grid-cols-2">
                     {education.map((edu, index) => (
                         <motion.div
                             key={index}
-                            initial={{ opacity: 0, y: 20 }}
+                            initial={{ opacity: 0, y: 16 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
+                            transition={{ duration: 0.4, delay: index * 0.1 }}
+                            className="relative overflow-hidden rounded-xl border border-border bg-card p-6 transition-all hover:shadow-lg"
                         >
-                            <Card className="h-full hover:shadow-lg transition-shadow">
-                                <CardHeader className="flex flex-row items-start gap-4 space-y-0 pb-2">
-                                    <div className="p-2 rounded-full bg-primary/10 text-primary mt-1">
-                                        <GraduationCap className="h-6 w-6" />
-                                    </div>
-                                    <div className="space-y-1">
-                                        <CardTitle className="text-xl font-semibold">
-                                            {edu.institution}
-                                        </CardTitle>
-                                        <p className="text-base font-medium text-muted-foreground">
-                                            {edu.degree}
-                                        </p>
-                                    </div>
-                                </CardHeader>
-                                <CardContent>
-                                    <div className="flex items-center text-sm text-muted-foreground mb-4">
-                                        <Calendar className="mr-2 h-4 w-4" />
-                                        {edu.year}
-                                    </div>
-                                    <p className="text-muted-foreground">
-                                        {edu.description}
+                            <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-primary/5 blur-2xl" />
+
+                            <div className="relative flex items-start gap-4">
+                                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                                    <GraduationCap className="h-5 w-5" />
+                                </div>
+                                <div className="flex-1">
+                                    <p className="font-mono text-xs text-muted-foreground">
+                                        {edu.faculty}
                                     </p>
-                                </CardContent>
-                            </Card>
+                                    <h3 className="font-serif text-xl font-semibold leading-snug mt-0.5">
+                                        {edu.institution}
+                                    </h3>
+                                    <p className="mt-1 text-sm font-medium text-primary">
+                                        {edu.degree}
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="relative mt-5 grid grid-cols-2 gap-3 text-xs text-muted-foreground">
+                                <span className="inline-flex items-center gap-1.5">
+                                    <Calendar className="h-3.5 w-3.5" />
+                                    {edu.year}
+                                </span>
+                                <span className="inline-flex items-center gap-1.5">
+                                    <MapPin className="h-3.5 w-3.5" />
+                                    {edu.location}
+                                </span>
+                            </div>
+
+                            <p className="relative mt-4 text-sm text-muted-foreground leading-relaxed">
+                                {edu.description}
+                            </p>
+
+                            <div className="relative mt-4 inline-flex items-center gap-2 rounded-md border border-accent/30 bg-accent/5 px-3 py-1.5 text-xs text-foreground">
+                                <Sparkles className="h-3.5 w-3.5 text-accent" />
+                                {edu.highlight}
+                            </div>
                         </motion.div>
                     ))}
                 </div>
