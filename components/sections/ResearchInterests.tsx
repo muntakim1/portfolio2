@@ -23,8 +23,9 @@ export function ResearchInterests() {
                         Research Interests
                     </h2>
                     <p className="mx-auto max-w-2xl text-muted-foreground">
-                        Building toward a coherent agenda: making the post-quantum,
-                        encrypted Internet observable, adaptive, and secure.
+                        Building toward a coherent agenda for AI-enabled CPS security,
+                        privacy-preserving monitoring, adaptive cyber defence, and
+                        quantum-safe communication systems.
                     </p>
                 </motion.div>
 

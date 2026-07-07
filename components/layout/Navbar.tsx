@@ -11,6 +11,7 @@ import { cn } from "@/lib/utils";
 const navItems = [
     { name: "Open To", href: "/#open-to" },
     { name: "Research", href: "/#research" },
+    { name: "Innovations", href: "/#innovations" },
     { name: "Publications", href: "/#publications" },
     { name: "Awards", href: "/#awards" },
     { name: "Events", href: "/#events" },

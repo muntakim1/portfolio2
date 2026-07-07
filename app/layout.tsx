@@ -13,14 +13,19 @@ const serif = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
-  title: "Muntakimur Rahaman | Researcher · Quantum-Safe Networking & AI for Cybersecurity",
+  title: "Muntakimur Rahaman | AI-Enabled CPS Security & Quantum-Safe Networking",
   description:
-    "Researcher at Multimedia University working on post-quantum cryptography, QKD orchestration, encrypted-traffic classification (TLS 1.3, QUIC), and AI-driven intrusion detection.",
+    "Researcher at Multimedia University working on AI-enabled cyber-physical systems security, privacy-preserving network monitoring, encrypted traffic intelligence, anomaly detection, and quantum-safe networking.",
   keywords: [
     "Muntakimur Rahaman",
     "Muntakim",
+    "AI-Enabled CPS Security",
+    "Privacy-Preserving Network Monitoring",
+    "Anomaly Detection",
+    "Zero-Day Detection",
     "Post-Quantum Cryptography",
     "QKD",
+    "O-RAN Security",
     "Encrypted Traffic Classification",
     "AI Cybersecurity",
     "MMU",

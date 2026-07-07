@@ -1,11 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { BrainCircuit, ExternalLink, KeyRound, Network } from "lucide-react";
+import { BrainCircuit, ExternalLink, KeyRound, Network, Shield } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { innovations } from "@/lib/static-data";
 
-const icons = [Network, BrainCircuit, KeyRound];
+const icons = [Network, BrainCircuit, KeyRound, Shield];
 
 export function Innovations() {
     return (
@@ -30,7 +30,7 @@ export function Innovations() {
                     </p>
                 </motion.div>
 
-                <div className="grid gap-5 lg:grid-cols-3">
+                <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
                     {innovations.map((item, index) => {
                         const Icon = icons[index] ?? Network;
 
@@ -93,7 +93,7 @@ export function Innovations() {
                                         rel="noreferrer"
                                         className="mt-6 inline-flex items-center gap-1 text-xs font-medium text-primary hover:underline"
                                     >
-                                        View repository
+                                        View details
                                         <ExternalLink className="h-3 w-3" />
                                     </a>
                                 )}

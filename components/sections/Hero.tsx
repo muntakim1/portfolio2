@@ -7,11 +7,11 @@ import { Container } from "@/components/ui/container";
 import { personalInfo } from "@/lib/static-data";
 
 const badges = [
-    "Quantum-Safe Systems",
-    "QKD Studio",
+    "AI-Enabled CPS Security",
+    "Privacy-Preserving Monitoring",
     "TrafficMAML",
-    "Encrypted-Traffic ML",
-    "Reproducible Research",
+    "QKD Studio",
+    "O-RAN Crypto-Agility",
     "Production ML at Scale",
 ];
 
@@ -47,13 +47,17 @@ export function Hero() {
                         <p className="mt-4 text-lg text-muted-foreground sm:text-xl md:text-2xl">
                             Researching{" "}
                             <span className="text-foreground font-medium">
-                                quantum-safe networking
+                                AI-enabled cyber-physical systems security
                             </span>{" "}
                             and{" "}
                             <span className="text-foreground font-medium">
-                                AI-driven cybersecurity
+                                privacy-preserving network monitoring
                             </span>{" "}
-                            through reproducible research software — while shipping{" "}
+                            through reproducible research software — while advancing{" "}
+                            <span className="text-foreground font-medium">
+                                quantum-safe networking
+                            </span>{" "}
+                            and shipping{" "}
                             <span className="text-foreground font-medium">
                                 production ML
                             </span>{" "}
@@ -169,7 +173,7 @@ export function Hero() {
                         <div className="mt-3 grid grid-cols-3 gap-2">
                             {[
                                 { v: "6", l: "Outputs" },
-                                { v: "3", l: "Innovations" },
+                                { v: "4", l: "Innovations" },
                                 { v: "1", l: "Patent" },
                             ].map((s) => (
                                 <div
