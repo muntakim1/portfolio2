@@ -1,5 +1,6 @@
 import { personalInfo } from "@/lib/static-data";
 import { Container } from "@/components/ui/container";
+import Link from "next/link";
 
 export function Footer() {
     return (
@@ -32,24 +33,29 @@ export function Footer() {
                         </p>
                         <ul className="space-y-1.5 text-sm">
                             <li>
-                                <a href="/#research" className="hover:text-primary">
+                                <Link href="/#research" className="hover:text-primary">
                                     Research Interests
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="/#publications" className="hover:text-primary">
+                                <Link href="/#innovations" className="hover:text-primary">
+                                    Innovations
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/#publications" className="hover:text-primary">
                                     Publications &amp; IP
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="/#awards" className="hover:text-primary">
+                                <Link href="/#awards" className="hover:text-primary">
                                     Awards
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="/#events" className="hover:text-primary">
+                                <Link href="/#events" className="hover:text-primary">
                                     Events
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>

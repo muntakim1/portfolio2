@@ -15,14 +15,14 @@ export const personalInfo = {
     shortName: "Muntakim",
     role: "Researcher × Senior Data Scientist",
     tagline:
-        "Quantum-Safe Networking · AI for Cybersecurity · Production ML at Scale",
+        "Quantum-Safe Network Systems · AI Cybersecurity · Reproducible Research Software",
     location: "Cyberjaya, Malaysia",
     email: "muntakim.cse@gmail.com",
     phone: "+60 17-404 9373",
     orcid: "0009-0000-8368-6578",
     orcidUrl: "https://orcid.org/0009-0000-8368-6578",
     about:
-        "I sit at the intersection of academic research and production engineering. As a Graduate Research Assistant at Multimedia University's Faculty of AI and Engineering, I design data-efficient learning systems for modern encrypted protocols (TLS 1.3, QUIC, Tor, VPN) and reinforcement-learning controllers for PQC + QKD orchestration in quantum-safe networks — work published in MDPI, accepted at an IEEE symposium, recognised with a Gold Medal at ITEX 2026, and filed as a patent. In parallel, I bring 5+ years of senior-level industry experience shipping 15+ AI products — from RAG pipelines and LLM agents to edge YOLOv8 deployments and predictive maintenance at scale — across energy, geospatial, industrial safety, and fintech. I am equally at home writing peer-reviewed papers and owning a production ML system end-to-end.",
+        "I build reproducible software and control frameworks for quantum-safe and AI-secure future networks. As a Graduate Research Assistant at Multimedia University's Faculty of AI and Engineering, my current work spans QKD/PQC service management, crypto-agile control, encrypted-traffic intelligence, and few-shot / zero-day threat detection. Recent outputs include QKD Studio, TrafficMAML, a published MDPI Computers systematic review, an accepted IEEE TENSYMP paper, manuscripts under review at IEEE TNSM and IEEE WIFS, a filed patent, and an ITEX 2026 Gold Medal. In parallel, I bring 5+ years of senior-level industry experience shipping 15+ AI products — from RAG pipelines and LLM agents to edge YOLOv8 deployments and predictive maintenance at scale — across energy, geospatial, industrial safety, and fintech.",
     image: "/images/muntakim.jpg",
     cv: "/Muntakim_CV.pdf",
     socials: [
@@ -65,8 +65,12 @@ export const profileFit = {
                     detail: "PRISMA 2020 systematic review · 500 → 22 studies",
                 },
                 {
-                    label: "IEEE conference paper (accepted)",
-                    detail: "HTTPS traffic classification, packet-burst statistics",
+                    label: "IEEE TENSYMP 2026 paper (accepted / presented)",
+                    detail: "HTTPS traffic classification from packet-burst statistics",
+                },
+                {
+                    label: "Research software manuscripts under review",
+                    detail: "QKD Studio at IEEE TNSM · adversarial bandits for O-RAN at IEEE WIFS",
                 },
                 {
                     label: "Patent application filed",
@@ -83,7 +87,7 @@ export const profileFit = {
                 {
                     label: "Active areas",
                     detail:
-                        "PQC, QKD, encrypted-traffic ML, RL, meta-/few-shot learning, edge security",
+                        "QKD/PQC service management, crypto-agility, encrypted-traffic ML, meta-/few-shot learning",
                 },
             ],
         },
@@ -164,10 +168,12 @@ export const experiences = [
         location: "Cyberjaya, Malaysia",
         type: "research",
         highlights: [
-            "Designed a hybrid reinforcement-learning controller for joint orchestration of PQC and QKD in quantum-safe networks — awarded Gold Medal at ITEX 2026.",
+            "Built QKD Studio / QKD Geo Simulator, a reproducible discrete-time testbed for QKD service-management and closed-loop control experiments; manuscript under review at IEEE TNSM.",
+            "Developed TrafficMAML, a self-resilient meta-learning framework for few-shot encrypted-traffic classification, zero-day detection, and drift recovery.",
             "Led a PRISMA 2020 systematic review of data-efficient learning for encrypted-traffic classification under TLS 1.3, QUIC, Tor and VPN — screened 500 studies down to 22; published as first author in Computers (MDPI).",
+            "Presented an accepted IEEE Region 10 TENSYMP 2026 paper on why ensemble learning can outperform deep learning for HTTPS traffic classification from packet-burst statistics.",
             "Designed Cognitive Traffic Adaptation, an episodic Transformer framework for cross-domain encrypted-traffic analysis targeting concept drift and zero-day attacks (patent application filed).",
-            "Benchmarked deep and ensemble models for HTTPS traffic classification from packet-burst statistics with an emphasis on interpretability (accepted at an IEEE symposium).",
+            "Designed a hybrid reinforcement-learning controller for joint orchestration of PQC and QKD in quantum-safe networks — awarded Gold Medal at ITEX 2026.",
         ],
     },
     {
@@ -230,7 +236,7 @@ export const education = [
         year: "2025 – Present",
         description:
             "Graduate Research Assistant. Research on AI-driven, quantum-safe security: data-efficient learning for encrypted-traffic classification, PQC/QKD orchestration, and adaptive intrusion detection. Expected completion: December 2026.",
-        highlight: "1 peer-reviewed journal paper · 1 IEEE conference paper (accepted) · 1 patent application filed",
+        highlight: "1 peer-reviewed journal paper · 1 IEEE TENSYMP paper · 2 manuscripts under review · 1 patent application filed",
     },
     {
         institution: "Bangladesh Army International University of Science and Technology (BAIUST)",
@@ -261,15 +267,70 @@ export const publications = [
     {
         type: "conference",
         title:
-            "Benchmarking Deep and Ensemble Learning for HTTPS Traffic Classification: The Case for Packet-Burst Statistics and Interpretability",
+            "Ensemble Learning Beats Deep Learning for HTTPS Traffic Classification: The Case for Packet-Burst Statistics and Interpretability",
         authors: "Rahaman, M. et al.",
-        venue: "IEEE 10th International Symposium, Penang, Malaysia",
+        venue: "IEEE Region 10 Symposium (TENSYMP), Penang, Malaysia",
         year: "2026",
-        status: "Accepted",
+        status: "Accepted / Presented",
         url: "#",
         tags: ["HTTPS", "Deep Learning", "Interpretability"],
         description:
-            "Benchmark of deep and ensemble models for HTTPS traffic classification from packet-burst statistics, with an emphasis on interpretability.",
+            "Conference paper and presentation comparing deep and ensemble models for HTTPS traffic classification from packet-burst statistics, with an emphasis on interpretability.",
+        image: "/eventphotos/IEEE_10_SYMP_2026_upcoming/B859A90B-54A6-41AC-93D0-9E2851E8D7E6_1_105_c.jpeg",
+        imageAlt:
+            "IEEE TENSYMP 2026 presentation slide for HTTPS traffic classification work",
+    },
+    {
+        type: "manuscript",
+        title:
+            "Evading the Strategic Eavesdropper: Adversarial Bandits for Quantum-Safe O-RAN",
+        authors: "Rahaman, M. et al.",
+        venue: "IEEE WIFS, in review",
+        year: "2026",
+        status: "In Review",
+        url: "#",
+        tags: ["O-RAN", "Adversarial Bandits", "Quantum-Safe Networking"],
+        description:
+            "Manuscript positioning contextual adversarial-bandit control for crypto-agile, quantum-safe O-RAN operation under a strategic eavesdropper.",
+    },
+    {
+        type: "manuscript",
+        title:
+            "QKD Studio: A Reproducible Discrete-Time Testbed for Service-Management and Closed-Loop Control Experiments in Quantum Key Distribution Networks",
+        authors: "Rahaman, M., & Mahmud, A.",
+        venue: "IEEE Transactions on Network and Service Management, in review",
+        year: "2026",
+        status: "In Review",
+        url: "https://github.com/muntakim1/qkd-geo-simulator",
+        tags: ["QKD", "Service Management", "Reproducible Systems"],
+        description:
+            "Research-software manuscript describing a deterministic QKD service-management simulator with per-tick datasets, run identities, and a programmable control plane.",
+    },
+    {
+        type: "manuscript",
+        title:
+            "The Adaptation-Detection Tension in Few-Shot Traffic Classification: A Dual Readout for Zero-Day Detection",
+        authors: "Rahaman, M. et al.",
+        venue: "IEEE Access, ready to submit",
+        year: "2026",
+        status: "Ready to Submit",
+        url: "https://github.com/muntakim1/trafficmaml-framework",
+        tags: ["TrafficMAML", "Zero-Day Detection", "Few-Shot Learning"],
+        description:
+            "Manuscript from the TrafficMAML programme focused on the tension between adaptation and novelty detection in few-shot encrypted-traffic classification.",
+    },
+    {
+        type: "manuscript",
+        title:
+            "Few-Shot Meta-Learning Under Domain Shift: A Reproducible Control-Led Study of IoT and IoMT Traffic Classification",
+        authors: "Rahaman, M. et al.",
+        venue: "Elsevier Computer Networks, ready to submit",
+        year: "2026",
+        status: "Ready to Submit",
+        url: "https://github.com/muntakim1/trafficmaml-framework",
+        tags: ["IoT / IoMT", "Domain Shift", "Reproducibility"],
+        description:
+            "Reproducible, control-led study of few-shot meta-learning under domain shift for IoT and IoMT network-traffic classification.",
     },
 ];
 
@@ -283,6 +344,54 @@ export const patents = [
         description:
             "An episodic Transformer framework targeting concept drift and zero-day attacks in cross-domain encrypted-traffic analysis.",
         tags: ["Transformer", "Episodic Learning", "Zero-Day"],
+    },
+];
+
+export const innovations = [
+    {
+        title: "QKD Studio / QKD Geo Simulator",
+        status: "Public research overview · IEEE TNSM manuscript in review",
+        year: "2026",
+        url: "https://github.com/muntakim1/qkd-geo-simulator",
+        summary:
+            "A reproducible QKD service-management testbed for studying key-pool planning, routing, scheduling, service continuity, and closed-loop crypto-agility experiments.",
+        highlights: [
+            "Geospatial topology editor for QKD service experiments",
+            "Deterministic seeded engine with per-tick dataset export",
+            "REST/WebSocket control plane for external ML/RL controllers",
+            "Contextual EXP3 experiments for QKD/PQC key-source selection",
+        ],
+        tags: ["QKD", "PQC", "Crypto-Agility", "Rust", "Tauri"],
+    },
+    {
+        title: "TrafficMAML Framework",
+        status: "Public architecture overview · two manuscripts in preparation",
+        year: "2026",
+        url: "https://github.com/muntakim1/trafficmaml-framework",
+        summary:
+            "A self-resilient meta-learning framework for few-shot encrypted-traffic classification, novel-class detection, and drift detect-and-recover workflows.",
+        highlights: [
+            "Sparse episodic Transformer for few-shot traffic adaptation",
+            "Dual-readout zero-day detector before cross-attention assimilation",
+            "MMD drift detection with re-adaptation and retain mechanisms",
+            "Leakage-controlled splits across TLS, QUIC, IoT, and IoMT datasets",
+        ],
+        tags: ["Meta-Learning", "Zero-Day", "Traffic Classification", "Drift"],
+    },
+    {
+        title: "Hybrid RL-based PQC + QKD Orchestration",
+        status: "ITEX 2026 Gold Medal · patent application filed",
+        year: "2026",
+        url: "#",
+        summary:
+            "A reinforcement-learning controller for joint orchestration of post-quantum cryptography and quantum key distribution in quantum-safe network services.",
+        highlights: [
+            "Dynamic security-mode selection across PQC and QKD resources",
+            "Service-aware orchestration under key availability constraints",
+            "Recognised with the ITEX 2026 Gold Medal in Kuala Lumpur",
+            "Protected through a filed intellectual-property application",
+        ],
+        tags: ["Reinforcement Learning", "PQC", "QKD", "Patent"],
     },
 ];
 
@@ -356,13 +465,21 @@ export const events = [
     },
     {
         slug: "IEEE_10_SYMP_2026_upcoming",
-        title: "IEEE 10th International Symposium — Upcoming",
+        title: "IEEE Region 10 TENSYMP 2026 — Paper Presentation",
         venue: "Penang, Malaysia",
-        date: "2026",
+        date: "June 30 - July 1, 2026",
         summary:
-            "Presenting accepted conference paper: Benchmarking Deep and Ensemble Learning for HTTPS Traffic Classification.",
-        cover: null,
-        photos: [],
+            "Presented the accepted IEEE TENSYMP 2026 paper on ensemble learning, deep learning, packet-burst statistics, and HTTPS traffic classification.",
+        cover: "/eventphotos/IEEE_10_SYMP_2026_upcoming/B859A90B-54A6-41AC-93D0-9E2851E8D7E6_1_105_c.jpeg",
+        photos: [
+            "/eventphotos/IEEE_10_SYMP_2026_upcoming/B859A90B-54A6-41AC-93D0-9E2851E8D7E6_1_105_c.jpeg",
+            "/eventphotos/IEEE_10_SYMP_2026_upcoming/ECBA5980-E8F2-4D12-AECD-AD0DBAC41731_1_102_o.jpeg",
+            "/eventphotos/IEEE_10_SYMP_2026_upcoming/CDA2C3DB-EE3C-43FB-8DDA-C8DC8E400C29_1_105_c.jpeg",
+            "/eventphotos/IEEE_10_SYMP_2026_upcoming/7F0082F7-8B11-4147-81E0-8F8007817459_1_105_c.jpeg",
+            "/eventphotos/IEEE_10_SYMP_2026_upcoming/555F9F3C-DEC8-415D-828B-DCA96C6A6EB6_1_105_c.jpeg",
+            "/eventphotos/IEEE_10_SYMP_2026_upcoming/73D4CDAB-275D-4CD0-A968-7A176783803C_1_105_c.jpeg",
+            "/eventphotos/IEEE_10_SYMP_2026_upcoming/A0AF6465-AC1A-4C11-BEDF-490BF1785B7F_1_105_c.jpeg",
+        ],
         tag: "Talk",
     },
     {

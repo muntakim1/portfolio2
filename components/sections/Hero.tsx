@@ -7,12 +7,12 @@ import { Container } from "@/components/ui/container";
 import { personalInfo } from "@/lib/static-data";
 
 const badges = [
-    "Post-Quantum Cryptography",
-    "QKD Orchestration",
+    "Quantum-Safe Systems",
+    "QKD Studio",
+    "TrafficMAML",
     "Encrypted-Traffic ML",
+    "Reproducible Research",
     "Production ML at Scale",
-    "Edge / Jetson",
-    "RAG · LLM Agents",
 ];
 
 export function Hero() {
@@ -53,7 +53,7 @@ export function Hero() {
                             <span className="text-foreground font-medium">
                                 AI-driven cybersecurity
                             </span>{" "}
-                            — while shipping{" "}
+                            through reproducible research software — while shipping{" "}
                             <span className="text-foreground font-medium">
                                 production ML
                             </span>{" "}
@@ -168,9 +168,9 @@ export function Hero() {
                         {/* Stat strip */}
                         <div className="mt-3 grid grid-cols-3 gap-2">
                             {[
-                                { v: "2", l: "Papers" },
+                                { v: "6", l: "Outputs" },
+                                { v: "3", l: "Innovations" },
                                 { v: "1", l: "Patent" },
-                                { v: "2", l: "Awards" },
                             ].map((s) => (
                                 <div
                                     key={s.l}

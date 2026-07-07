@@ -2,6 +2,7 @@ import { Hero } from "@/components/sections/Hero";
 import { ProfileFit } from "@/components/sections/ProfileFit";
 import { About } from "@/components/sections/About";
 import { ResearchInterests } from "@/components/sections/ResearchInterests";
+import { Innovations } from "@/components/sections/Innovations";
 import { Publications } from "@/components/sections/Publications";
 import { Achievements } from "@/components/sections/Achievements";
 import { Events } from "@/components/sections/Events";
@@ -18,6 +19,7 @@ export default function Home() {
       <ProfileFit />
       <About />
       <ResearchInterests />
+      <Innovations />
       <Publications />
       <Achievements />
       <Events />

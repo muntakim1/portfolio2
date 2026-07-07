@@ -1,11 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink, FileText, BookOpen, Lightbulb } from "lucide-react";
+import Image from "next/image";
+import { ExternalLink, FileText, BookOpen, Lightbulb, ClipboardList } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { publications, patents } from "@/lib/static-data";
 
 export function Publications() {
+    const journalPublications = publications.filter((p) => p.type === "journal");
+    const conferencePublications = publications.filter((p) => p.type === "conference");
+    const manuscriptPublications = publications.filter((p) => p.type === "manuscript");
+
     return (
         <section id="publications" className="py-20 bg-muted/40">
             <Container>
@@ -38,11 +43,9 @@ export function Publications() {
                             </h3>
                         </div>
                         <div className="space-y-4">
-                            {publications
-                                .filter((p) => p.type === "journal")
-                                .map((pub, idx) => (
-                                    <PublicationItem key={idx} pub={pub} index={idx + 1} />
-                                ))}
+                            {journalPublications.map((pub, idx) => (
+                                <PublicationItem key={idx} pub={pub} index={idx + 1} />
+                            ))}
                         </div>
                     </div>
 
@@ -55,19 +58,37 @@ export function Publications() {
                             </h3>
                         </div>
                         <div className="space-y-4">
-                            {publications
-                                .filter((p) => p.type === "conference")
-                                .map((pub, idx) => (
-                                    <PublicationItem
-                                        key={idx}
-                                        pub={pub}
-                                        index={
-                                            publications.filter((p) => p.type === "journal").length +
-                                            idx +
-                                            1
-                                        }
-                                    />
-                                ))}
+                            {conferencePublications.map((pub, idx) => (
+                                <PublicationItem
+                                    key={idx}
+                                    pub={pub}
+                                    index={journalPublications.length + idx + 1}
+                                />
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Manuscripts */}
+                    <div>
+                        <div className="mb-4 flex items-center gap-2">
+                            <ClipboardList className="h-4 w-4 text-primary" />
+                            <h3 className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
+                                Manuscripts In Review &amp; Preparation
+                            </h3>
+                        </div>
+                        <div className="space-y-4">
+                            {manuscriptPublications.map((pub, idx) => (
+                                <PublicationItem
+                                    key={idx}
+                                    pub={pub}
+                                    index={
+                                        journalPublications.length +
+                                        conferencePublications.length +
+                                        idx +
+                                        1
+                                    }
+                                />
+                            ))}
                         </div>
                     </div>
 
@@ -136,6 +157,9 @@ export function Publications() {
 type Pub = (typeof publications)[number];
 
 function PublicationItem({ pub, index }: { pub: Pub; index: number }) {
+    const image = "image" in pub ? pub.image : undefined;
+    const imageAlt = "imageAlt" in pub && pub.imageAlt ? pub.imageAlt : pub.title;
+
     return (
         <motion.article
             initial={{ opacity: 0, y: 12 }}
@@ -147,6 +171,18 @@ function PublicationItem({ pub, index }: { pub: Pub; index: number }) {
             <div className="flex items-start gap-4">
                 <span className="cite-num">{index}</span>
                 <div className="flex-1">
+                    {image && (
+                        <div className="relative mb-4 aspect-[16/9] overflow-hidden rounded-lg border border-border bg-muted">
+                            <Image
+                                src={image}
+                                alt={imageAlt}
+                                fill
+                                sizes="(max-width: 768px) 100vw, 768px"
+                                className="object-cover"
+                            />
+                        </div>
+                    )}
+
                     <div className="flex flex-wrap items-center gap-2">
                         {"status" in pub && pub.status && (
                             <span className="inline-flex items-center rounded-full border border-accent/30 bg-accent/10 px-2.5 py-0.5 text-[10px] font-medium uppercase tracking-wider text-accent">
